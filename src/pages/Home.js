@@ -1,9 +1,13 @@
+import UserResult from "../components/users/UserResult"
 
 export default function Home() {
     return (
-        <div>
-            <h1 className="text-6xl">Welcome</h1>
+        <>
+            {/* {Search Component} */}
+            <h1 className="text-6xl">
+                <UserResult />
+            </h1>
 
-        </div>
+        </>
     )
 }

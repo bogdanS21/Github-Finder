@@ -75,6 +75,14 @@ export default function User() {
                                 </a>
                             </div>
                         </div>
+                        <div className='w-full rounded-lg shadow-md  bg-base-100 stats'>
+                            {location && (
+                                <div className='stat'>
+                                    <div className='stat-title text-md'>Location</div>
+                                    <div className='text-lg stat-value'>{location}</div>
+                                </div>
+                            )}
+                        </div>
                     </div>
 
                 </div>

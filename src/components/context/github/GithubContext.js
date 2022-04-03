@@ -69,7 +69,6 @@ export const GithubProvider = ({ children }) => {
         const response = await fetch(`${GITHUB_URL}/users/${login}/repos?${params}`, {})
 
         const data = await response.json()
-        console.log(data)
 
         dispatch({
             type: 'GET_REPOS',
